@@ -1,0 +1,247 @@
+/* Common Inline Display Tags: */
+/* Common Block Display Tags: *
+
+background-color: #94dcbf;
+
+/
+
+/*************************************TAG SELECTORS******************************************/
+body {
+  margin-top: 2%;
+  font-family: "Roboto", sans-serif;
+  background-color: #b4e7d2;
+}
+
+h1 {
+  color: #1e9aaa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+h2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+/**************************************CLASS SELECTORS***************************************/
+
+.header {
+  position: relative;
+}
+.logo {
+  max-width: 100px;
+  position: absolute;
+  left: 8%;
+}
+
+.company-name {
+  position: absolute;
+  color: black;
+  font-size: 2rem;
+  left: 16%;
+  display: inline-block;
+}
+
+.U {
+  color: #08b871;
+}
+
+.K {
+  color: #2862b9;
+}
+
+.heading-coming {
+  position: relative;
+  left: 8%;
+  top: 150px;
+  display: inline-block;
+}
+
+.coming-soon {
+  color: black;
+  font-weight: 400;
+}
+
+.description {
+  position: relative;
+  display: inline-block;
+  top: 265px;
+  width: 600px;
+  right: 425px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+  position: relative;
+  top: 220px;
+  left: 120px;
+}
+
+.background-img {
+  opacity: 0.4;
+  width: 40%;
+  position: absolute;
+  top: 30px;
+  left: 350px;
+}
+
+.right-section {
+  width: 750px;
+  height: 500px;
+  position: absolute;
+  left: 750px;
+  bottom: 80px;
+}
+
+.img-1 {
+  width: 800px;
+  height: 500px;
+  transform: scale(1.15);
+}
+.img-2 {
+  width: 600px;
+  height: 450px;
+}
+
+.img-3 {
+  width: 750px;
+  height: 600px;
+  left: 100px;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+
+  /*75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }*/
+}
+
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+.middle-container {
+  background-color: #94dcbf;
+  position: relative;
+  top: 270px;
+  margin: 0;
+  padding-top: 10px;
+}
+.contact-me {
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.getintouch {
+  margin: 0px;
+}
+
+.footer-message {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.bottom-container {
+  position: relative;
+  top: 270px;
+  text-align: center;
+  background-color: #94dcbf;
+  padding-top: 10px;
+}
+
+.footer-link {
+  color: black;
+  margin: 0px 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-last {
+  color: black;
+  position: relative;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/*.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #9569fa, #a684f8);
+  background-image: -moz-linear-gradient(top, #9569fa, #a684f8);
+  background-image: -ms-linear-gradient(top, #9569fa, #a684f8);
+  background-image: -o-linear-gradient(top, #9569fa, #a684f8);
+  background-image: linear-gradient(to bottom, #9569fa, #a684f8);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #865fe0, #b89bfc);
+  background-image: -moz-linear-gradient(top, #865fe0, #b89bfc);
+  background-image: -ms-linear-gradient(top, #865fe0, #b89bfc);
+  background-image: -o-linear-gradient(top, #865fe0, #b89bfc);
+  background-image: linear-gradient(to bottom, #865fe0, #b89bfc);
+  text-decoration: none;
+  color: #e9e1ff;
+}*/
