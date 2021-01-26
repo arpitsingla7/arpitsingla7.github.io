@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon2.ico" />
+    <link rel="icon" href="facicon3.ico" />
     <title>UniKart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacramento&display=swap"
       rel="stylesheet"
@@ -19,14 +20,10 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <img src="img/undraw_Graduation_ktn0.svg" class="background-img" />
+    <!-- <img src="img/undraw_Graduation_ktn0.svg" class="background-img" />-->
     <div class="top-container">
       <div class="header">
-        <img
-          class="logo"
-          src="img\logo\android-chrome-512x512.png"
-          alt="logo-img-1"
-        />
+        <img class="logo" src="Kart Logo 1.png" alt="logo-img-1" />
         <h3 class="company-name">
           <span class="U">U</span>ni<span class="K">K</span>art
         </h3>
@@ -52,31 +49,82 @@
           <span class="coming-soon">COMING SOON</span>
         </h1>
         <p class="description">
-          My Company, <strong>UniKart</strong> is developing a second-hand
-          e-commerce platform for college students that helps students generate
-          extra money quickly by securely selling their used products to their
-          peers.
+          <strong>UniKart</strong> is developing a second-hand e-commerce
+          platform for college students that helps students generate extra money
+          quickly by securely selling their used products to their peers.
         </p>
+        <form
+          id="myForm"
+          target="_self"
+          onsubmit="return postToGoogle();"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdh7Pfq-wrmNAf_k9ux6_TKQkWN-VdPnIIlWFf_UKbDlYTtAw/formResponse"
+        >
+          <div class="group">
+            <input
+              id="emailField"
+              type="email"
+              required
+              placeholder="Email (required)"
+              name="entry.627362502"
+            />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+          </div>
+          <br />
+          <div class="webflow-style-input">
+            <input
+              type="text"
+              id="firstname"
+              placeholder="First Name (optional)"
+              name="entry.438200656"
+            />
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Last Name (optional)"
+              name="entry.1603123021"
+            />
+          </div>
+          <input class="btn" type="submit" value="Join" />
+          <!--<Button class="btn">Join</Button>-->
+        </form>
 
-        <div class="group">
-          <input
-            type="text"
-            required
-            type="email"
-            placeholder="Email (required)"
-          />
-          <span class="highlight"></span>
-          <span class="bar"></span>
-        </div>
-        <br />
-        <div class="webflow-style-input">
-          <input
-            type="text"
-            id="firstname"
-            placeholder="First Name (optional)"
-          />
-          <input type="text" id="lastname" placeholder="Last Name (optional)" />
-        </div>
+        <p id="success-msg">You have successfully Joined UNIKART!</p>
+
+        <script>
+          function postToGoogle() {
+            var field1 = $("#firstname").val();
+            var field2 = $("#lastname").val();
+            var field3 = $("#emailField").val();
+
+            $.ajax({
+              url:
+                "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdh7Pfq-wrmNAf_k9ux6_TKQkWN-VdPnIIlWFf_UKbDlYTtAw/formResponse",
+              data: {
+                "entry.438200656": field1,
+                "entry.1603123021": field2,
+                "entry.627362502": field3,
+              },
+              type: "POST",
+              dataType: "xml",
+              success: function (d) {},
+              error: function (x, y, z) {
+                document.getElementById("emailField").value = "";
+                document.getElementById("firstname").value = "";
+                document.getElementById("lastname").value = "";
+
+                $("#success-msg").show();
+
+                function success() {
+                  $("#success-msg").hide();
+                }
+
+                setTimeout(success, 4000);
+              },
+            });
+            return false;
+          }
+        </script>
       </div>
     </div>
 

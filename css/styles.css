@@ -9,7 +9,7 @@ background-color: #94dcbf;
 body {
   margin-top: 2%;
   font-family: "Roboto", sans-serif;
-  background-color: #b4e7d2;
+  background-color: white;
 }
 
 h1 {
@@ -42,6 +42,7 @@ p {
   max-width: 100px;
   position: absolute;
   left: 8%;
+  top: 20px;
 }
 
 .company-name {
@@ -63,7 +64,7 @@ p {
 .heading-coming {
   position: relative;
   left: 8%;
-  top: 150px;
+  top: 100px;
   display: inline-block;
 }
 
@@ -75,9 +76,10 @@ p {
 .description {
   position: relative;
   display: inline-block;
-  top: 265px;
+  top: 210px;
   width: 600px;
-  right: 425px;
+  right: 420px;
+  font-size: 1.1rem;
 }
 
 input {
@@ -88,8 +90,40 @@ input {
   border-bottom: 1px solid #757575;
   background-color: transparent;
   position: relative;
-  top: 220px;
-  left: 120px;
+  top: 160px;
+  left: 122px;
+}
+
+.btn {
+  background: #2862b9;
+  background-image: -webkit-linear-gradient(top, #2862b9);
+  background-image: -moz-linear-gradient(top, #2862b9);
+  background-image: -ms-linear-gradient(top, #2862b9);
+  background-image: -o-linear-gradient(top, #2862b9);
+  background-image: linear-gradient(to bottom, #2862b9);
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 328px 10px 310px;
+  text-decoration: none;
+  position: relative;
+  top: 175px;
+  left: 122px;
+}
+
+.btn:hover {
+  background: #08b871;
+  text-decoration: none;
+}
+
+#success-msg {
+  display: none;
+  position: relative;
+  top: 175px;
+  left: 300px;
 }
 
 .background-img {
@@ -101,11 +135,11 @@ input {
 }
 
 .right-section {
-  width: 750px;
-  height: 500px;
+  width: 650px;
+  height: 400px;
   position: absolute;
-  left: 750px;
-  bottom: 80px;
+  left: 850px;
+  bottom: 180px;
 }
 
 .img-1 {
@@ -173,7 +207,7 @@ div#slider figure {
 }
 
 .middle-container {
-  background-color: #94dcbf;
+  background-color: #b6b1ff;
   position: relative;
   top: 270px;
   margin: 0;
@@ -198,7 +232,7 @@ div#slider figure {
   position: relative;
   top: 270px;
   text-align: center;
-  background-color: #94dcbf;
+  background-color: #b6b1ff;
   padding-top: 10px;
 }
 
@@ -217,31 +251,3 @@ div#slider figure {
   padding-bottom: 10px;
   text-align: center;
 }
-
-/*.btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #9569fa, #a684f8);
-  background-image: -moz-linear-gradient(top, #9569fa, #a684f8);
-  background-image: -ms-linear-gradient(top, #9569fa, #a684f8);
-  background-image: -o-linear-gradient(top, #9569fa, #a684f8);
-  background-image: linear-gradient(to bottom, #9569fa, #a684f8);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #865fe0, #b89bfc);
-  background-image: -moz-linear-gradient(top, #865fe0, #b89bfc);
-  background-image: -ms-linear-gradient(top, #865fe0, #b89bfc);
-  background-image: -o-linear-gradient(top, #865fe0, #b89bfc);
-  background-image: linear-gradient(to bottom, #865fe0, #b89bfc);
-  text-decoration: none;
-  color: #e9e1ff;
-}*/
